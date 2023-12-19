@@ -36,7 +36,7 @@
                   <Font name="Arial" size="15.0" />
                </font>
             </PasswordField>
-            <Button fx:id="loginButton" layoutX="146.0" layoutY="259.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="40.0" prefWidth="141.0" styleClass="button2" stylesheets="@button.css" text="Giriş Yap" textFill="#0d1117">
+            <Button fx:id="loginButton" layoutX="146.0" layoutY="259.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="40.0" prefWidth="141.0" styleClass="button2" stylesheets="@css-file.css" text="Giriş Yap" textFill="#0d1117">
                <font>
                   <Font name="Arial Bold" size="22.0" />
                </font>

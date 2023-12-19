@@ -1,0 +1,61 @@
+.button
+{
+    -fx-background-color :  #21262d;
+    -fx-background-radius: 20;
+}
+.button:hover
+{
+    -fx-background-color : #3c434d;
+    -fx-background-radius: 20;
+}
+.button:pressed
+{
+    -fx-border-radius : 20;
+    -fx-border-width : 2;
+    -fx-border-color : #0d1117;
+}
+.button2
+{
+    -fx-background-color :  #c6cdd5;
+    -fx-background-radius: 20;
+}
+.button2:hover
+{
+    -fx-background-color : #ecf2f8;
+    -fx-background-radius: 20;
+}
+button2:pressed
+{
+    -fx-border-radius : 20;
+    -fx-border-width : 2;
+    -fx-border-color : #0d1117;
+}
+.table-view
+{
+     -fx-background-color : #c6cdd5;
+}
+.table-view .column-header
+{
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background
+{
+    -fx-background-color: #89929b;
+    -fx-padding: 0 0 2px 0;
+}
+.table-view .table-cell
+{
+    -fx-border-color: transparent;
+}
+.table-row-cell: hover
+{
+    -fx-text-background-color: red;
+}
+.table-row-cell: odd
+{
+    -fx-background-color: #89929b;
+}
+.table-row-cell: even
+{
+    -fx-background-color: #c6cdd5;
+}
