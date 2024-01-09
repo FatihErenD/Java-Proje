@@ -2,7 +2,7 @@ package com.example.projeodevi;
 
 import java.util.ArrayList;
 
-public class Kitap extends Yayinlanmislar {
+public class Kitap extends Yayinlanan {
     private String kitapAd;
     private String yazarAd;
     private String yayineviAd;
@@ -42,7 +42,7 @@ public class Kitap extends Yayinlanmislar {
     }
 
     public ArrayList<Kitap> getArrayList(){
-        return printArrayList();
+        return returnArrayList();
     }
 
     @Override

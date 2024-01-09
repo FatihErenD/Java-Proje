@@ -14,6 +14,7 @@
     -fx-border-width : 2;
     -fx-border-color : #0d1117;
 }
+
 .button2
 {
     -fx-background-color :  #c6cdd5;
@@ -30,6 +31,7 @@ button2:pressed
     -fx-border-width : 2;
     -fx-border-color : #0d1117;
 }
+
 .table-view
 {
      -fx-background-color : #c6cdd5;

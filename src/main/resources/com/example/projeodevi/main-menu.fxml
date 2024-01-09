@@ -82,9 +82,67 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <AnchorPane fx:id="sell_book" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #ecf2f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox layoutX="166.0" layoutY="170.0" prefHeight="160.0" prefWidth="418.0">
+                     <children>
+                        <HBox prefHeight="39.0" prefWidth="378.0">
+                           <children>
+                              <Label text="Kitap Adı :" textFill="#0d1117">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="sellBookName" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #c6cdd5; -fx-background-radius: 15; -fx-border-color: #0d1117; -fx-border-radius: 15; -fx-border-width: 2;">
+                                 <font>
+                                    <Font name="Arial" size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="39.0" prefWidth="378.0">
+                           <children>
+                              <Label text="Adet :" textFill="#0d1117">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" right="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="sellBookNumber" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #c6cdd5; -fx-background-radius: 15; -fx-border-color: #0d1117; -fx-border-radius: 15; -fx-border-width: 2;">
+                                 <font>
+                                    <Font name="Arial" size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="satBilgiLabel" alignment="CENTER" prefHeight="18.0" prefWidth="421.0" textFill="#cd251c" underline="true">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#onSell" prefHeight="40.0" prefWidth="200.0" stylesheets="@css-file.css" text="Kitabı Sat" textFill="#c6cdd5">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="110.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
             <AnchorPane fx:id="book_publish" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #ecf2f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <VBox layoutX="172.0" layoutY="88.0" prefHeight="325.0" prefWidth="406.0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="172.0" AnchorPane.topAnchor="88.0">
+                  <VBox layoutX="172.0" layoutY="88.0" prefHeight="343.0" prefWidth="406.0" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="172.0" AnchorPane.topAnchor="88.0">
                      <children>
                         <HBox prefHeight="31.0" prefWidth="388.0">
                            <children>
@@ -182,70 +240,20 @@
                               <Insets top="20.0" />
                            </VBox.margin>
                         </HBox>
+                        <Label fx:id="yayinlaBilgiLabel" alignment="CENTER" prefHeight="18.0" prefWidth="421.0" textFill="#cd251c" underline="true">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
                         <Button fx:id="publishBookButton" mnemonicParsing="false" onAction="#onPublishBook" prefHeight="38.0" prefWidth="183.0" stylesheets="@css-file.css" text="Kitabı Yayınla" textFill="#c6cdd5">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
                            <VBox.margin>
                               <Insets left="115.0" />
-                           </VBox.margin>
-                        </Button>
-                     </children>
-                  </VBox>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="sell_book" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #ecf2f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <VBox layoutX="166.0" layoutY="170.0" prefHeight="160.0" prefWidth="418.0">
-                     <children>
-                        <HBox prefHeight="39.0" prefWidth="378.0">
-                           <children>
-                              <Label text="Kitap Adı :" textFill="#0d1117">
-                                 <font>
-                                    <Font name="Arial Bold" size="18.0" />
-                                 </font>
-                                 <HBox.margin>
-                                    <Insets right="20.0" top="5.0" />
-                                 </HBox.margin>
-                              </Label>
-                              <TextField fx:id="sellBookName" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #c6cdd5; -fx-background-radius: 15; -fx-border-color: #0d1117; -fx-border-radius: 15; -fx-border-width: 2;">
-                                 <font>
-                                    <Font name="Arial" size="15.0" />
-                                 </font>
-                              </TextField>
-                           </children>
-                        </HBox>
-                        <HBox prefHeight="39.0" prefWidth="378.0">
-                           <children>
-                              <Label text="Adet :" textFill="#0d1117">
-                                 <font>
-                                    <Font name="Arial Bold" size="18.0" />
-                                 </font>
-                                 <HBox.margin>
-                                    <Insets left="40.0" right="20.0" top="5.0" />
-                                 </HBox.margin>
-                              </Label>
-                              <TextField fx:id="sellBookNumber" prefHeight="31.0" prefWidth="266.0" style="-fx-background-color: #c6cdd5; -fx-background-radius: 15; -fx-border-color: #0d1117; -fx-border-radius: 15; -fx-border-width: 2;">
-                                 <font>
-                                    <Font name="Arial" size="15.0" />
-                                 </font>
-                              </TextField>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="10.0" />
-                           </VBox.margin>
-                        </HBox>
-                        <Label fx:id="satBilgiLabel" alignment="CENTER" prefHeight="18.0" prefWidth="421.0" textFill="#cd251c" underline="true">
-                           <font>
-                              <Font name="Arial" size="12.0" />
-                           </font>
-                        </Label>
-                        <Button mnemonicParsing="false" onAction="#onSell" prefHeight="40.0" prefWidth="200.0" stylesheets="@css-file.css" text="Kitabı Sat" textFill="#c6cdd5">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                           <VBox.margin>
-                              <Insets left="110.0" top="20.0" />
                            </VBox.margin>
                         </Button>
                      </children>
